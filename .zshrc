@@ -15,5 +15,6 @@ compinit
 
 # Custom
 export STARSHIP_CONFIG=~/.zsh/starship.toml
+export SHELL=/bin/zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
