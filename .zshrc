@@ -7,7 +7,7 @@ unsetopt autocd beep notify
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '/home/colin/.zshrc'
+zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
 compinit
@@ -16,5 +16,7 @@ compinit
 # Custom
 export STARSHIP_CONFIG=~/.zsh/starship.toml
 export SHELL=/bin/zsh
+export PATH="$HOME/opt/cross/bin:$PATH"
+export LIBVIRT_DEFAULT_URI="qemu://system"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
