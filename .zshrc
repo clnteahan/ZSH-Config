@@ -16,7 +16,7 @@ compinit
 # Custom
 export STARSHIP_CONFIG=~/.zsh/starship.toml
 export SHELL=/bin/zsh
-export PATH="$HOME/opt/cross/bin:$PATH"
+export PATH="/home/colin/Apps/carbon/bin:$HOME/opt/cross/bin:$PATH"
 export LIBVIRT_DEFAULT_URI="qemu://system"
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(starship init zsh)"
