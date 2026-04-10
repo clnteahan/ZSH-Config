@@ -3,3 +3,6 @@ zsh-autosuggestions/
 
 # History file
 .histfile
+
+# Custom settings per user
+custom.env

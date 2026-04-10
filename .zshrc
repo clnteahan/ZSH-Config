@@ -16,7 +16,20 @@ compinit
 # Custom
 export STARSHIP_CONFIG=~/.zsh/starship.toml
 export SHELL=/bin/zsh
-export PATH="/home/colin/Apps/carbon/bin:$HOME/opt/cross/bin:$PATH"
-export LIBVIRT_DEFAULT_URI="qemu://system"
+export EDITOR=nvim
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+if [ -f  ~/.zsh/custom.env ]; then
+  source ~/.zsh/custom.env
+else
+  echo "Warning: 'custom.env' not found"
+fi
+
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="$HOME/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
