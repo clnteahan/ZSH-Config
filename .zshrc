@@ -14,6 +14,8 @@ compinit
 # End of lines added by compinstall
 
 # Custom
+export FZF_DEFAULT_OPTS="--exact"
+source <(fzf --zsh) # Fuzzyfind replaces defaults 
 export STARSHIP_CONFIG=~/.zsh/starship.toml
 export SHELL=/bin/zsh
 export EDITOR=nvim
