@@ -28,6 +28,8 @@ fi
 
 eval "$(starship init zsh)"
 
+alias lsa="ls -lhA"
+
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
