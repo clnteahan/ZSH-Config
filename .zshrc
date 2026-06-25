@@ -29,6 +29,8 @@ fi
 eval "$(starship init zsh)"
 
 alias lsa="ls -lhA"
+alias blk="sudo lsblk -o path,size,fstype,mountpoint"
+alias idblk="sudo lsblk -o path,size,fstype,mountpoint,uuid"
 
 # pnpm
 export PNPM_HOME="$HOME/.local/share/pnpm"
